@@ -1,0 +1,16 @@
+{
+  "name": "Gomoku et Salle de Cha",
+  "version": "1.0.0",
+  "description": "Gomoku et Salle de Chat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "LIU Xiang, ZHAO Yuzhen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0"
+  }
+}
