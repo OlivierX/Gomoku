@@ -1,0 +1,163 @@
+
+#gobang {
+    float: left; width: 600px;
+}
+
+
+
+#chatroom {
+    float: left;
+    margin-left: 100px;
+}
+
+#bangroom{
+}
+
+html, body {
+    margin: 0;
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+.wrapper {
+    width: 400px;
+    height: 640px;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}
+#nickWrapper {
+    display: none;
+    color: black;
+}
+.banner {
+    height: 80px;
+    width: 100%;
+}
+.banner p {
+    float: left;
+    display: inline-block;
+}
+.controls {
+    height: 100px;
+    margin: 5px 0px;
+    position: relative;
+}
+#historyMsg {
+    height: 400px;
+    background-color: #fff;
+    overflow: auto;
+    padding: 2px;
+}
+#historyMsg img {
+    max-width: 99%;
+}
+.timespan {
+    color: #ddd;
+}
+.items {
+    height: 30px;
+}
+#colorStyle {
+    width: 50px;
+    border: none;
+    padding: 0;
+}
+#messageInput {
+    width: 340px;
+    max-width: 440px;
+    height: 90px;
+    max-height: 90px;
+    float:left;
+}
+#sendBtn {
+    width: 50px;
+    height: 96px;
+    float: right;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("../images/bg.jpeg");
+}
+
+canvas {
+  background: rgba(255, 255, 255, .7);
+  display: block;
+  margin: 40px auto;
+  box-shadow: -2px -2px 2px #efefef, 5px 5px 5px #b9b9b9;
+}
+.thisbang{
+      margin:0 auto;
+      width:500px;
+  margin-right: 200px;
+    }
+#text-container {
+  text-shadow: 2px 2px 2px grey;
+  color: #fff23f;
+  margin-top: 0px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button-container > div {
+  padding: 8px;
+  background: dodgerblue;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.button-container > div:active {
+  opacity: .8;
+}
+
+#dialog {
+  font-weight: bolder;
+  top: 240px;
+  border: 0;
+  background: rgba(255, 255, 255, .8);
+}
+
+#dialog .dialog-content {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dialog .dialog-button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+}
+
+#dialog .dialog-button div {
+  padding: 10px;
+  background: rgba(204, 204, 204, .6);
+}
+

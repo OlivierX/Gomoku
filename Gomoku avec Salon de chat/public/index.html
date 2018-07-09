@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoBang et Chambre chat</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="text-container">Bienvenue, veuillez choisir le mode du jeu</div>
+    <div class="container">
+	    <div class="row clearfix">
+		    <div class="col-xs-8">
+                <div class="thisbang">
+                    <canvas id="chess"></canvas>
+                     <div class="col-xs-6 column">
+					 <button class="btn btn-default" type="button" id="computer">IA</button>
+				</div>
+				<div class="col-xs-6 column">
+					 <button class="btn btn-default" type="button" id="person" >Jouer sur Internet</button>
+				</div>
+                </div>
+            <dialog id="dialog">
+              <div class="dialog-content">
+                <div id="dialog-title"></div>
+                <div class="dialog-button">
+                  <div id="btn_ok"></div>
+                  <div id="btn_back"></div>
+                </div>
+              </div>
+            </dialog>
+
+		    </div>
+
+		<div class="col-xs-4">
+                    <div class="wrapper">
+            <div class="banner">
+                    <h1>MESSAGERIE</h1>
+                    <span id="status"></span>
+                </div>
+            <div id="historyMsg"></div>
+            <div class="controls" >
+                <div class="items">
+                    <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
+                    <input id="clearBtn" type="button" value="Vider" title="clear screen" />
+                </div>
+                <textarea id="messageInput" placeHolder="Tapez votre message ici"></textarea>
+                <input id="sendBtn" type="button" value="OK">
+            </div>
+        </div>
+		</div>
+        <div id="loginWrapper">
+            <p id="info">en train de connecter.</p>
+            <div id="nickWrapper">
+                <input type="text" placeHolder="Entrer votre nom ici" id="nicknameInput"  style="color:black"/>
+                <input type="button" value="OK" id="loginBtn" />
+            </div>
+         </div>
+	    </div>
+    </div>
+
+
+    <script src="scripts/socket.io.js"></script>
+    <script src="scripts/computer.js"></script>
+    <script src="scripts/person.js"></script>
+    <script src="scripts/client.js"></script>
+</body>
+</html>
